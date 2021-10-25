@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+}
+header {
+    margin-bottom: 0%!important;
+    padding-bottom: 0%!important;
+    position: relative!important;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+#sticky-nav {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#small-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0 4px 2px -2px gray;
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#small-nav li {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+#small-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#small-nav li a:hover {
+    background-color: #111;
+}
+.container {
+    display: grid;
+    grid-template-columns: 5% 45% 35% 15%;
+    padding-top: 120px;
+    margin-bottom: 140px;
+}
+#product {
+    padding-top: 10%;
+}
+.images {
+    display: block;
+    border-radius: 5%;
+    margin: auto;
+    max-width: fit-content;
+}
+#new-arrival {
+    color: white; 
+    background-color: red; 
+    border-top: 1px solid red; 
+    border-left: 1px solid red; 
+    border-right: 1px solid red; 
+    font-size: large;
+}
+#heart {
+    color: rgb(206, 200, 200);
+    width: 24px;
+    height: 24px;
+}
+.red-heart {
+    color: red!important;
+}
+#heart:hover {
+    color: red;
+}
+.description {
+    font-size: 0.95em;
+    color: rgb(97, 96, 96);
+}
+.price {
+    font-size: 1.1em;
+    font-weight: bold;
+    float: right;
+    padding-right: 10rem;
+}
+.cart-btn {
+    width: 75%;
+    height: 2.5rem;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 3px;
+}
+.cart-btn:hover {
+    background-color: #45a049;
+}
+.simple-rating i {
+    color: #f5ba00;
+    display: inline-block;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+#rating-form form {
+    margin-top: 70px;
+}
+#rating-form {
+    text-align: center;
+    box-shadow: inset 0px 6px 3px -3px gray;
+    background-color: rgb(223, 219, 219);
+    padding-top: 70px;
+    padding-bottom: 140px;
+}
+#rate-comment {
+    display: none;
+}
+.show-rate-comment {
+    display: block!important;
+}
+#rating-form .simple-rating i {
+    font-size: 3em;
+    color: #f5ba00;
+    display: inline-block;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+#submit-comment {
+    width: 15%;
+    height: 2.5rem;
+    background-color: #646668;
+    color: white;
+    padding: 12px;
+    margin: 10px 0px 0px 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 3px;
+}
+#submit-comment:hover {
+    background-color: #4d4f50;
+}
+#star {
+    float: left;
+}
+#comment-title,
+#rating-title {
+    box-shadow: inset 0px 6px 3px -3px gray;
+    border-top: 1px solid rgb(207, 207, 207);
+    height: 100px;
+    text-align: center;
+}
+#comment-title,
+#rating-title h2 {
+    padding-top: 40px;
+    margin-top: 0;
+}
+#add-comment {
+    float: right;
+    margin-right: 2%;
+}
+#add-comment:hover,
+#add-rating:hover {
+    background-color: #4d4f50;
+}
+#add-comment,
+#add-rating {
+    width: 20%;
+    height: 2.5rem;
+    background-color: #646668;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 17px;
+}
+#add-rating {
+    margin-top: 70px;
+}
+.comments-container {
+    display: grid;
+    box-shadow: inset 0px 6px 3px -3px gray;
+    background-color: rgb(223, 219, 219);
+    grid-template-columns: 10% 75% 15%;
+    padding-top: 70px;
+}
+.delete-comment {
+    top: 15px; 
+    right: 15px; 
+    position: absolute;
+}
+.delete-comment:hover {
+    cursor: pointer;
+    color: red;
+}
+#text-form {
+    display: none;
+}
+.comments {
+    overflow: hidden;
+    position: relative;
+    list-style-type: none;
+    margin: 1em;
+    border-radius: 5px;
+    border: 2px solid rgb(207, 207, 207);
+    background-color: white;
+    padding: 1em;
+    font-size: large;
+}
+.date {
+    font-weight: lighter;
+    font-size: large;
+}
+.comments h3 {
+    margin: 0%;
+    margin-bottom: 1%;
+}
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    resize: both;
+    min-height: 80px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    padding: 1px 6px 1px 1px;
+    font-size: 20px;
+}
+.textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+}
+p strong {
+    display: block;
+}
+#comment-form {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 1em;
+    border-radius: 5px;
+    border: 2px solid rgb(207, 207, 207);
+    background-color: white;
+    padding: 1em;
+    font-size: large;
+}
+@media (max-width: 1000px) {
+    .container {
+        display: block;
+        text-align: center;
+        padding-top: 120px;
+    }
+    .images {
+        display: block;
+    }
+    #product {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .comments-container {
+        display: block;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .price {
+        padding-right: 4rem;
+    }
+    #product .simple-rating {
+        padding-left: 60px;
+    }
+}

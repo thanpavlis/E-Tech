@@ -1,0 +1,97 @@
+header {
+    margin-bottom:80px !important;
+}
+
+/* Hide arrows in input number 
+for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    font-family: inherit;
+    font-size: 15px;
+    color: red;
+}
+
+/* for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3{
+    margin-top:25px;
+    margin-bottom: 20px;
+    font-family: 'Vidaloka', serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+    padding-top: 4pc;
+    padding-bottom:2pc;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    font-family: 'Vidaloka', serif;
+}
+
+form {
+    margin: auto;
+}
+
+#save{
+    margin-top: 10px;
+    margin-bottom: 10pc;
+    text-align: center;
+}
+
+
+.btn-primary{
+    background-color: #19a6c8 !important;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #008ead;
+}
+
+.btn-primary:active{
+    background-color: #008ead
+}
+
+#seperator{
+    width: 70%;
+    color: gray;
+}
+
+input{
+    text-align: center;
+}
+
+.form-control{
+    display:inline-block !important;
+}
+/*
+@media screen and (max-width:900px) {
+    .container{
+        width: 85%;
+    }
+}*/
+.footer-container .footer {
+    padding-top: 30px;
+}
+
+.footer-container h2 {
+    font-size: 1.5em;
+}

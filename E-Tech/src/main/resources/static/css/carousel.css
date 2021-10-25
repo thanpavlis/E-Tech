@@ -1,0 +1,130 @@
+#carousel {
+  padding-bottom: 140px;
+}
+#carousel h2 {
+  text-align: center;
+  font-weight: lighter;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border-radius: 1%;
+  border: 5px solid #717171;
+  margin-bottom: 10px;
+}
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  mix-blend-mode: multiply;
+}
+.image-div,
+.space-div,
+.text {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-div {
+  width: 340px;
+}
+.space-div {
+  padding-right: 10%;
+  padding-left: 10%;
+  width: 20%;
+}
+.text {
+  color: black;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 15px;
+  bottom: 8px;
+  text-align: center;
+}
+.discount {
+  color: red;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.numbertext {
+  color: rgba(165, 162, 162, 0.8);
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #bbb;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active-slide,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 515px) {
+  .image-div {
+    width: 150px;
+    height: 130px;
+  }
+}

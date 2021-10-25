@@ -1,0 +1,84 @@
+body {
+    background: white;
+}
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Vidaloka", serif;
+}
+.container {
+    background-color: white;
+    width: 70%; 
+    margin-top: 5%;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    margin: auto;
+}
+#submit {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.btn-primary {
+    background-color: #19a6c8;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #008ead;
+}
+.btn-primary:active {
+    background-color: #008ead;
+}
+.error {
+    font-family: inherit;
+    font-size: 15px;
+    color: red;
+}
+#input_container {
+    position: relative;
+    direction: ltr;
+}
+#edit-logo {
+    position: absolute;
+    bottom: 2px;
+    right: 30px;
+    width: 24px;
+    height: 24px;
+}
+#fname-edit {
+    float: left;
+    padding-left: 21%;
+}
+#lname-edit {
+    padding-left: 21%;
+}
+#text-error, #text-error1, #text-error2, #text-error3, #text-error4, #text-error5 {
+    color: red;
+}
+@media all and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    #lname-edit {
+        display: none;
+    }
+    #fname-edit {
+        float: none;
+        padding-right: 21%;
+    }
+}
+@media all and (min-width: 768px) {
+    #lname-edit2 {
+        display: none;
+    }
+}

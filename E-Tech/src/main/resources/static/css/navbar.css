@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+header {
+  margin-bottom: 200px;
+  font-family: "Vidaloka", serif;
+}
+.main-nav {
+  font-size: 20px;
+}
+.main-nav {
+  background-color: #333;
+}
+.main-nav ul {
+  padding: 0;
+  margin: 0%;
+  display: flex;
+}
+.main-nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.main-nav ul li a {
+  color: white;
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+  text-decoration: none;
+  position: relative;
+}
+.main-nav ul li:first-child {
+  margin-right: auto;
+}
+.logo img {
+  height: 60px; 
+  display: block;
+  border-radius: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+.main-nav ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 4px solid white;
+  transform: scaleX(0);
+  transition: transform 0.7s ease;
+}
+nav #icon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-right: 40px;
+  display: none;
+}
+.my-dropdown {
+  float: left;
+  overflow: hidden;
+}
+.my-dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+.second-nav a:hover, .my-dropdown:hover .dropbtn {
+  background-color: #333;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  background-color: #959799;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #333;
+}
+.my-dropdown:hover .dropdown-content {
+  display: block;
+}
+.second-nav {
+  height: 49px;
+  background-color: #959799;
+  box-shadow: 0 4px 2px -2px #333;
+}
+.second-nav ul {
+  padding: 0;
+  margin: 0%;
+  display: flex;
+}
+.second-nav ul li {
+  list-style-type: none;
+}
+.second-nav ul li a {
+  color: white;
+  display: block;
+  line-height: 1em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+.second-nav ul li:last-child {
+  margin-left: auto;
+}
+.second-nav ul li a:hover {
+  background-color: #333;
+}
+@media screen and (max-width: 1048px) {
+  .second-nav ul {
+    display: block;
+    margin-right: 20px;
+    position: absolute;
+    width: 100%;
+    background-color: #333;
+    top: 148px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index:10;
+  }
+  .second-nav ul li:last-child {
+    margin: auto;
+  }
+  .second-nav a {
+    font-size: 17px;
+  }
+  .second-nav #icon {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .second-nav li {
+    display: block;
+    line-height: 30px;
+  }
+  .second-nav a {
+    font-size: 20px;
+  }
+  .second-nav ul li a:hover {
+    background-color: #959799;
+  }
+  .second-nav ul.show {
+    left: 0;
+  }
+}

@@ -1,0 +1,303 @@
+html {
+    background-color: rgb(223, 219, 219);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.hip-item li:nth-child(odd) {
+    background-color: white;
+}
+.hip-item li:nth-child(even) {
+    background-color: white;
+}
+img {
+    display: block;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.img-zoom {
+    padding-top: 3%;
+    transition: transform 0.2s;
+    width: 280px;
+    height: 240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-zoom:hover {
+    cursor: pointer;  
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.hip-item {
+    border: 2px solid rgb(207, 207, 207);
+    background-color: white;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 1em;
+    border-radius: 25px;
+    transition: transform 0.2s;
+}
+.hip-item:hover {
+    transform: scale(1.05);
+}
+#show-new-arrivals:hover {
+    background-color: #4d4f50!important;
+}
+#show-new-arrivals {
+    width: 150px;
+    margin-top: 50px;
+    height: 2.5rem;
+    color: white;
+    max-height: fit-content;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 3px; 
+    background-color: #646668;
+}
+#arrivals-title {
+    font-size: xxx-large; 
+    margin-top: 0; 
+    font-weight: lighter; 
+    color: rgb(98, 90, 93);
+}
+#new-arrivals {
+    box-shadow: inset 0px 6px 3px -3px gray;
+    border-top: 1px solid rgb(207, 207, 207);
+    height: 200px;
+    background-size:55% 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 0; background-image: url(https://www.snugglesafe.co.uk/wp-content/uploads/new-products.jpg);
+    background-repeat: no-repeat;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.block {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.block input {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 25px;
+    background-color: #eee;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 15% 1% auto;
+    grid-gap: 10px;
+    padding: 10px;
+    padding-bottom: 200px;
+}
+.verticalLine {
+    border-right: solid #eeecec;
+}
+.filters {
+    border-bottom: 2px solid rgb(97, 96, 96);
+    border-radius: 1%;
+    padding-bottom: 10%;
+}
+.filters > h3 {
+    color: rgb(97, 96, 96);
+}
+.name {
+    cursor: pointer;
+}
+.name,
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.products {
+    width: fit-content;
+    height: fit-content;
+    block-size: fit-content;
+    position: relative;
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+.price-rating {
+    padding: 0%;
+}
+.description {
+    font-size: 0.9em;
+    color: rgb(97, 96, 96);
+}
+.price {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.price-output {
+    text-align: center;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    opacity: 0.6;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196f3;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196f3;
+    cursor: pointer;
+}
+.simple-rating i {
+    color: #f5ba00;
+    display: inline-block;
+    padding: 1px 2px;
+    cursor: pointer;
+}
+.remove-favourite-btn{
+    width: 100%; 
+    background-color: rgb(223, 71, 89); 
+    color: white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+#myBtn:hover {
+  background-color: #555;
+  opacity: 1;
+}
+@media (max-width: 1271px) {
+    #arrivals-title {
+        font-size: x-large!important;
+    }
+    #show-new-arrivals {
+        width: 100px!important;
+    }
+}
+@media (max-width: 1000px) {
+    .verticalLine {
+        border-right: none;
+    }
+}
+@media (max-width: 660px) {
+    .hip-pagination a {
+        display: block;
+    }
+}
+@media (max-width: 515px) {
+    main {
+        display: block;
+    }
+    .img-zoom {
+        padding-top: 3%;
+        transition: transform 0.2s;
+        width: 200px;
+        height: 240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+

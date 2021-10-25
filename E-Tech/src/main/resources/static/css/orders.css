@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(223, 219, 219);
+}
+header {
+    margin-bottom:80px !important;
+}
+table {
+    margin: 0 auto;
+    width: 85%;
+    clear: both;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    word-wrap: break-word;
+    border: 1px solid #333;
+}
+#orders-table thead td {
+    background-color: #959799;
+    color: white;
+} 
+#orders-table_wrapper {
+    margin: auto;
+    width: 85%;
+    padding-top: 35px;
+    padding-bottom: 180px;
+}
+#orders-table_wrapper label {
+    padding-bottom: 35px;
+}
+.fa-file-pdf {
+    color: red;
+    font-size: 30px;
+}
+.delete-order-btn, .show-pdf-btn {
+    border: none;
+    background: none;
+}
+.fa-trash:hover {
+    cursor: pointer;
+    color: red;
+}
+.footer-container .footer {
+    padding-top: 30px;
+}
+.footer-container h2 {
+    font-size: 1.5em;
+}
+@media (max-width: 1600px) {
+    #orders-table_wrapper {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+}

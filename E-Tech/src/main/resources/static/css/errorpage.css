@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(125deg,rgb(93, 92, 92),#b3b5b6);
+}
+.container-error{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    top: 50%;
+    transform: translateY(30%);
+    text-align: center;
+    color: #343434;
+}
+.container-error h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+}
+.container-error a{
+    text-decoration: none;
+    background: rgb(93, 92, 92);
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.container-error a:hover{
+    background:#989a9b;
+}
